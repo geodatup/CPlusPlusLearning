@@ -1,0 +1,43 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <algorithm>
+#include <iterator>
+#include <vector>
+#include <map>
+using namespace std;
+
+// Foncteur qui effectue un chiffrement par decalage
+class ChiffrementSubst{
+
+public:
+
+  // Constructeur prenant le nom fichier contenant les substitutions a utiliser
+  ChiffrementSubst(const string& nomFichier)
+  {
+     // A vous de jouer...
+  }
+  
+};
+
+
+int main()
+{
+
+  // Le message a crypter
+  string texte("BIENVENUE SUR LE MOOC C++ D'OCR !!");
+
+  // Demande du decalage a l'utilisateur
+  cout << "Quel fichier contenant la cle voulez-vous utiliser ? ";
+  string nomFichier;
+  cin >> nomFichier;
+
+  // Creation du foncteur
+  ChiffrementSubst foncteur(nomFichier);
+
+  // Chaine de caracteres pour le message crypter
+  string texte_crypte;
+
+  return 0;
+}
+
